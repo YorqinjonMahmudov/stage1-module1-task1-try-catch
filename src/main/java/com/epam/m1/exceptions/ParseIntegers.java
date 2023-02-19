@@ -1,5 +1,3 @@
-package february;
-
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
@@ -24,7 +22,7 @@ public class ParseIntegers {
             try{
                 int number = Integer.parseInt(next);
                 sum+=number;
-            }catch(RuntimeException e){
+            }catch(NumberFormatException e){
                 justWords+=next+" ";
             }
             // todo: complete it
